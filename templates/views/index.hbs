@@ -1,39 +1,25 @@
-<html lang="nl">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="icon" href="/img/weather.png">
-    <title>Gefeliciteerd Simone!</title>
+    <title>Weather</title>
 </head>
-
 <body>
-    <div class="confetti">
-        <div class="main-content">
-            <div class="container">
-                <div class="main-content">
-                    <h1>Gefeliciteerd Simone!</h1>
-                    <h3><span class="invert"> Een persoonlijke boodschap, speciaal voor jou: </span></h3>
+    <div class="main-content">
+        {{>header}}
+        <p>Use this site to get your weather.</p>
 
-                    <video controls width="100%">
+        <form action="">
+            <input type="text" placeholder="Amsterdam">
+            <button>Search</button>
+        </form>
 
-                        <source src="/media/gefeliciteerd-simone.mp4" type="video/mp4">
-
-                        Het filmpje wordt niet ondersteund door je browser. Gebruik Chrome of Safari :)
-                    </video>
-
-                </div>
-            </div>
-        </div>
-
+        <p id="message-1"></p>
+        <p id="message-2"></p>
     </div>
-    <div class="container">
-            {{>footer}}
-    </div>
-
-
+    {{>footer}}
     <script src="/js/app.js"></script>
 </body>
-
 </html>
